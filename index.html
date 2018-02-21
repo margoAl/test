@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "HTML">
+<html>
+   <head>
+      <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="no-cache" http-equiv="Cache-control">
+      <TITLE>iPay: Pay form*</TITLE>
+      <link href="include/css/main.css" rel="stylesheet">
+      <link href="include/css/ok.css" media="(max-width: 800px)" rel="stylesheet">
+      <link href="include/css/ok.css" media="(min-width: 801px)" rel="stylesheet">
+      <link href="include/css/ok2.css" rel="stylesheet">
+      <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+-->
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <script type="text/javascript" src="include/js/scripts.js"></script>
+      <script type="text/javascript" src="incl/js/jscr.js?2341"></script>
+   </head>
+   <body onload="isMobile();" class="thrColAbsHdr">
+      <DIV id="cnt">
+         <DIV class="header">
+           <SPAN class="logosleft">
+           <img alt="visa" class="schemelogos" src="include/logos/method-master.png">
+           <img alt="visa" class="schemelogos" src="include/logos/method-visa.png">
+         </SPAN>
+      <SPAN class="logosright">
+            <img alt="nets" class="schemelogos" src="include/logos/nets.gif">
+            <img alt="acq" class="securitylogos" src="include/logos/seb.png">
+           <!--<img alt="visa" class="securitylogos" src="include/logos/verifiedbyvisalogo.jpg">
+           <img alt="visa" class="securitylogos" src="include/logos/secureCode_logo.gif">-->
+         </SPAN>
+       </DIV>
+         <DIV class="tbar"><SPAN class="kaupmees">Web-POS testifirma </SPAN></DIV>
+         <DIV class="tbar"><SPAN class="kaupmehekontakt">Tartu mnt 2,Tallinn</SPAN></DIV>
+         <FORM id="authform" onsubmit="return liida()" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" name="authform" action="?" method="post">
+            <DIV class="carddata">
+               <INPUT value="8AEF7DBEF3" name="id" type="hidden"><INPUT value="246769" name="uno" type="hidden"><INPUT value="AIadGywvPWLTs2NilGzMkVM=" name="srnd" type="hidden"><INPUT value="et" name="lang" type="hidden"><INPUT value="authorise" name="action" type="hidden">
+               <DIV class="labelInputArea"></DIV>
+               <DIV class="labelInputArea"><label class="pan" for="pan">Kaardi number:</label><br class="rwd-break"><INPUT autocomplete="off" maxlength="20" class="input" id="pan" name="pan" type="text" value="5450339000000014"><SPAN style="margin-left:5px;" class="req">*</SPAN><br></DIV>
+               <DIV class="labelInputArea"><label for="expdate">Kehtivusaeg:</label><br class="rwd-break"><INPUT autocomplete="off" placeholder="MM" maxlength="2" size="2" class="month" id="expdate" name="expmonth" type="text" value="09"><INPUT autocomplete="off" placeholder="YYYY" maxlength="4" size="4" class="year" id="expdate" name="expyear" type="text" value="2015"><SPAN style="margin-left:5px;" class="req">*</SPAN><br></DIV>
+               <DIV class="labelInputArea"><label for="cvv2">CVV2:</label><br class="rwd-break"><INPUT autocomplete="off" size="4" maxlength="4" id="cvv2" name="cvv2" class="input" type="text" value="432"><br></DIV>
+               <DIV class="labelInputArea"><label for="msgdata">Nimi kaardil:</label><br class="rwd-break"><INPUT autocomplete="off" size="25" maxlength="25" name="msgdata" class="input" type="text" value="Jaan Jalgratas"><SPAN style="margin-left:5px;" class="req">*</SPAN><br></DIV>
+               <DIV class="labelInputArea"><label for="email">Email (kviitungile):</label><br class="rwd-break"><INPUT autocomplete="off" size="25" maxlength="35" name="email" class="input" type="email"><br></DIV>
+               <DIV class="keskel">Summa:0.01 EUR </DIV>
+            </DIV>
+            <DIV class="keskel"><INPUT value="Autoriseeri" name="submit" type="submit" class="button"><INPUT value="Keeldu" name="decline" type="submit" class="declinebutton"></DIV>
+         </FORM>
+         <!--<DIV class="paremal"><SPAN class="req">*</SPAN>
+           <SPAN class="legal">T&auml;rniga m&auml;rgistatud v&auml;ljad on kohustuslikud</SPAN><br>
+         </DIV>-->
+         <DIV class="legal">Turvalist makseteenust pakub NETS Estonia AS. </DIV>
+         <DIV class="tbar">&nbsp;
+            <SPAN class="kontakt">Telefon: +372 6711477, 9oo-17oo EET (UTC+2), e-kiri:webpos@estcard.ee
+            ver:@build.version.tag@</SPAN>
+         </DIV>
+        <!-- <DIV class="footer">
+           <SPAN class="logosleft">
+             <img alt="nets" class="schemelogos" src="include/logos/nets.gif">
+           </SPAN><SPAN class="logosright">
+             <img alt="acq" class="securitylogos" src="include/logos/seb.png">
+           </SPAN>
+         </DIV>-->
+      </DIV>
+      <body/>
+</html>
